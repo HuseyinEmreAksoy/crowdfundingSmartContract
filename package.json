@@ -1,0 +1,24 @@
+{
+  "name": "crowdfundingsmartcontract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HuseyinEmreAksoy/crowdfundingSmartContract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HuseyinEmreAksoy/crowdfundingSmartContract/issues"
+  },
+  "homepage": "https://github.com/HuseyinEmreAksoy/crowdfundingSmartContract#readme",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.23.0"
+  }
+}
