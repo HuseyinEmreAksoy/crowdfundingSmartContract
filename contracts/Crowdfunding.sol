@@ -41,7 +41,7 @@ contract Crowdfunding {
     event CampaignClaimed(uint campaignId, address owner, uint raisedAmount, STATUS state);
 
     function createCampaign(string memory _title, uint _targetAmount, uint _duration) external  {
-        require(bytes(title).length > 0, 'Title must not be empty');
+        require(bytes(_title).length > 0, 'Title must not be empty');
         require(_targetAmount > 0, "Target must be > 0");
         require(_duration > 0, "Duration must be > 0");
 
@@ -70,7 +70,7 @@ contract Crowdfunding {
 
         campaign.raisedAmount += msg.value;
 
-        emit ContributionMade(campaignId, msg.sender, msg.value);
+        emit ContributionMade(_campaignId, msg.sender, msg.value);
 
         if(campaign.raisedAmount >= campaign.targetAmount){
             campaign.status = STATUS.SUCCESSFUL;
